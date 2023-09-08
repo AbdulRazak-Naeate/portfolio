@@ -19,6 +19,9 @@ const Contact = () =>  {
     
    sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLETEID, form.current )
      .then((result) => {
+      setName('')
+      setEmail('')
+      setMessage('')
          // show the user a success message
      }, (error) => {
          // show the user an error
