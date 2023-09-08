@@ -2,7 +2,7 @@ import React from 'react'
 import {Grid,Typography,Button} from '@mui/material'
 import {useDispatch} from "react-redux"
 import {moveToSection} from "../navbar/navbarSlice"
-import myImage from '../../../assets/myimage.jpg'
+//import myImage from '../../../assets/myimage.jpg'
 import './index.css'
 const Herosection = () => {
 
@@ -36,14 +36,13 @@ const Herosection = () => {
       </Grid>
     </Grid>
       </Grid>
-      <Grid item >
+      <Grid item xs={12} sm={12} md={6} lg={6} >
         {/* <div className='myimage-wrapper'>
 
-        </div>
-       <img src={myImage} className='myimage' alt='author'/> */}
+        </div> */}
+       <img src={'https://res.cloudinary.com/abdulrazakneate/image/upload/v1694194514/myimage_myptci.jpg'}  className='myimage' alt='author'/>
       </Grid>
-      <Grid item>
-      </Grid>
+      
     </Grid>
    </div>
   )

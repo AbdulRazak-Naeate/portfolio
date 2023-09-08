@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import { TextField, Button, Grid, Box } from "@mui/material";
 import {WhatsApp,Telegram,EmailOutlined} from '@mui/icons-material';
-import {emailjs} from 'email-js';
+import {  init,sendForm} from '@emailjs/browser';
 
 const Contact = () =>  {
     const [name, setName] = useState("");
@@ -15,8 +15,9 @@ const Contact = () =>  {
 
  const sendEmail = (e) => {
    e.preventDefault();  // prevents the page from reloading when you hit “Send”
+    init(process.env.REACT_APP_EMAILJS_PUBLICID)
     
-   emailjs.sendForm(process.env.EMAILJS_SERVICEID, process.env.EMAILJS_TEMPLETEID, form.current, process.env.EMAILJS_PUBLICID)
+   sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLETEID, form.current )
      .then((result) => {
          // show the user a success message
      }, (error) => {
