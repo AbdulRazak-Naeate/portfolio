@@ -1,0 +1,48 @@
+/* Navbar.css */
+.navbar {
+/*     background: linear-gradient(90deg, rgb(60, 59, 59) 0%, rgb(26, 23, 23) 100%); */
+    background-color: #333;
+    color: white;
+    padding: 0px 0;
+    border: 0px solid ;
+    position: fixed;
+    z-index: 1000;
+  }
+  .navbar-menu-item{
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Add hover effect */
+  .nav-links a:hover {
+    border-bottom: 2px solid ;
+/*     border: 2px solid white;
+ */  }
+  

@@ -1,0 +1,18 @@
+.herosection{
+    background-image: url('../../../assets/myimage.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+.myimage-wrapper{
+    position: absolute;
+    background-color: aliceblue;
+    width:430px;
+    height: 500px;
+}
+.myimage{
+    position: absolute;
+    height: 60%;
+    width:30vw;
+    object-fit: cover;
+}
