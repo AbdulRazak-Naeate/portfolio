@@ -20,10 +20,11 @@ const Contact = () =>  {
     
    sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLETEID, form.current )
      .then((result) => {
-      NotificationManager.success('Success message', `${result.text}`);
-      setName('')
+       setName('')
       setEmail('')
       setMessage('')
+      NotificationManager.success('Success message', `${result.text}`);
+     
          // show the user a success message
      }, (error) => {
          // show the user an error
