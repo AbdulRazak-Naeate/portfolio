@@ -3,6 +3,7 @@ import { useState } from "react";
 import { TextField, Button, Grid, Box } from "@mui/material";
 import {WhatsApp,Telegram,EmailOutlined} from '@mui/icons-material';
 import {  init,sendForm} from '@emailjs/browser';
+import {NotificationManager} from 'react-notifications';
 
 const Contact = () =>  {
     const [name, setName] = useState("");
@@ -19,6 +20,7 @@ const Contact = () =>  {
     
    sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLETEID, form.current )
      .then((result) => {
+      NotificationManager.success('Success message', `${result.text}`);
       setName('')
       setEmail('')
       setMessage('')
