@@ -9,15 +9,17 @@ function Navbar() {
   return (
    
          <Grid container justifyContent={'space-between'} className='navbar'>
-         <Grid item  sx={2} lg={3} padding={2}>
+         <Grid item   sx={{
+    display: { xs: "none", lg: "block" }
+  }} lg={3} padding={2} visibility='visible'>
             <Grid container alignItems={'center'} alignContent={'center'}>
-               <Grid item  border={0}>
+               <Grid item border={0} >
                 <Typography variant='h6'>Abubakari Abdul Razak</Typography>
                </Grid>
             </Grid>
          </Grid>
 
-         <Grid  sx={8} lg={8}>
+         <Grid  sx={12} md={12} lg={8}>
           <Grid item>
             <Grid contianer justifyContent={'flex-start'}>
                   <Grid item >

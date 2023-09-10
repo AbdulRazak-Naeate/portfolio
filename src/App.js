@@ -60,7 +60,9 @@ const rootTheme = createTheme({
        <Grid item sx={0} sm={0} md={2} lg={2}>
 
        </Grid>
-       <Grid item sx={12} sm={12} md={10} lg={8} marginTop={20}>
+       <Grid item  sx={{
+    marginTop: { xs: "10", lg: "20" },
+  }} sm={12} md={10} lg={8} >
         <Grid container direction={'column'} spacing={3}>
         <section id="section0"><Grid item >
           <Herosection/>

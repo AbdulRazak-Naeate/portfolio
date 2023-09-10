@@ -13,18 +13,19 @@ const Herosection = () => {
        <Grid item xs={12} sm={12} md={6} lg={6}>
        <Grid container direction={'column'} padding={2}>
        <Grid item padding={1} margin={3} style={{color:'white',paddingBottom:2,padding:2}}>
-        <Typography variant='h4' align='center'>Hello, I am Abdul Razak.</Typography>
-        <Typography variant='h5'>I take great pleasure in creating exceptional applications.</Typography><br/>
-        <Typography variant='h5'>Lets work together to achieve greatness</Typography>
+        <Typography variant='h4' align='center'>Hello,</Typography>
+        <Typography variant='h4' align='center'>I am Abdul Razak.</Typography><br/>
+        <Typography variant='h6'>I take great pleasure in creating exceptional applications.</Typography>
+        <Typography variant='h6'>Lets work together to achieve greatness</Typography>
 
         </Grid>
-      <Grid item>
-      <Grid container justifyContent={'space-between'}>
-      <Grid item>
+      <Grid item  xs={12} sm={12} md={6} lg={6} >
+      <Grid container justifyContent={'space-between'} padding={2}>
+      <Grid item >
       <Button variant='contained'  sx={{textTransform:'initial'}} onClick={()=>{dispatch(moveToSection('section3'))}} >Work With Me</Button>
       </Grid>
       <Grid item>
-      <Button variant='contained'  sx={{textTransform:'initial'}}onClick={()=>{dispatch(moveToSection('section2'))}} >See What I build</Button>
+      <Button variant='contained'  sx={{textTransform:'initial'}}onClick={()=>{dispatch(moveToSection('section2'))}} >See What I build </Button>
 
        
       </Grid>
@@ -36,11 +37,13 @@ const Herosection = () => {
       </Grid>
     </Grid>
       </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={6} >
-        {/* <div className='myimage-wrapper'>
-
-        </div> */}
-       <img src={'https://res.cloudinary.com/abdulrazakneate/image/upload/v1694194514/myimage_myptci.jpg'}  className='myimage' alt='author'/>
+      <Grid item xs={12} sm={12} md={6} lg={6}>
+       <Grid container justifyContent={'center'}>
+        <Grid item>
+        <img src={'https://res.cloudinary.com/abdulrazakneate/image/upload/v1694194514/myimage_myptci.jpg'}  className='myimage' alt='author'/>
+        </Grid>
+       </Grid>
+      
       </Grid>
       
     </Grid>
