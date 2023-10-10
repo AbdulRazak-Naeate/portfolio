@@ -26,7 +26,7 @@ function BlankLink({ url, linkText }) {
          technology:'MERN STACK',
          image:'https://res.cloudinary.com/abdulrazakneate/image/upload/v1693996110/Capture_u4babu.png',
          link:'https://pi-fiat-currency-converter.herokuapp.com/'
-        },{title:'Ghana Charity Ognaization Website',
+        },{title:'Ghana Charity Organization Website',
        description:'A  Charity Organization website',
        technology:'WORDPRESS',
        image:'https://res.cloudinary.com/abdulrazakneate/image/upload/v1693996995/Gcad1_qklbkv.png',
