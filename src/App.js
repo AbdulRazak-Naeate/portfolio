@@ -93,8 +93,6 @@ const rootTheme = createTheme({
                 
                 <Typography variant='h4' align='center' color={'white'}>Apps I have build{`</>`} </Typography> 
                  
-                  
-                  
                   <Work/> 
               </Grid>
                 </Grid></section> 

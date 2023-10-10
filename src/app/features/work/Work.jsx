@@ -102,7 +102,7 @@ function BlankLink({ url, linkText }) {
     
 
   return (
-    <Grid container justifyContent={'space-between'} spacing={3}>
+    <Grid container justifyContent={'space-between'} spacing={2}>
      {
         works.map((work,index)=>{
             return  <Grid item sx={12} sm={12} lg={6}><WorkCard key={index} title={work.title} description={work.description} technology={work.technology} image={work.image} link={work.link}/></Grid>
