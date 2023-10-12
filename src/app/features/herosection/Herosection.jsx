@@ -40,7 +40,7 @@ const Herosection = () => {
       <Grid item xs={12} sm={12} md={6} lg={6}>
        <Grid container justifyContent={'center'}>
         <Grid item>
-        <img src={'https://res.cloudinary.com/abdulrazakneate/image/upload/v1694194514/myimage_myptci.jpg'}  className='myimage' alt='author'/>
+        <img src={'https://res.cloudinary.com/abdulrazakneate/image/upload/v1697127956/131064367_3563868063702611_6813874051450943315_n_yvwub1.jpg'}  className='myimage' alt='author'/>
         </Grid>
        </Grid>
       
